@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="36dp"
+        android:gravity="center_horizontal">
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="#4E342E"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="#4E342E"
+            android:textColorHint="#9E9E9E"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="#4E342E"
+                android:textColorHint="#9E9E9E" />
+
+            <ImageView
+                android:id="@+id/togglePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_eye_off"
+                android:contentDescription="Toggle Password Visibility"
+                android:padding="12dp"
+                 />
+        </LinearLayout>
+
+        <!-- Confirm Password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="#4E342E"
+                android:textColorHint="#9E9E9E" />
+
+            <ImageView
+                android:id="@+id/toggleConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_eye_off"
+                android:contentDescription="Toggle Confirm Password Visibility"
+                android:padding="12dp"
+                />
+        </LinearLayout>
+
+        <!-- Password Strength Bar -->
+        <ProgressBar
+            android:id="@+id/passwordStrengthBar"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/passwordStrengthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4E342E"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:text="Strength: Weak"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Type Spinner -->
+
+        <!-- Sign Up Button -->
+        <Spinner
+            android:id="@+id/userTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6f4e37 "
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:backgroundTint="#8D6E63"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

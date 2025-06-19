@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "622095580764",
+    "project_id": "cocogo-2287f",
+    "storage_bucket": "cocogo-2287f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622095580764:android:7494084178e307e81af099",
+        "android_client_info": {
+          "package_name": "com.s23010188.cocogo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC43oMXHlrMi9q7Og5MU0As33hLC6_86Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

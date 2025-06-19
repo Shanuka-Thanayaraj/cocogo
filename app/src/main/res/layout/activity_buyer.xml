@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coconut_bg"
+    tools:context=".BuyerActivity">
+
+    <!-- Header with background color and padding -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Available Coconut Listings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+         android:background="#965a3e"
+        android:textColor="#fff8e7"
+        android:padding="16dp"
+        android:elevation="4dp" />
+
+    <!-- CardView container for RecyclerView with margin and elevation -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRecyclerViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTitle"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="#f5deb3">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewListings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:clipToPadding="false" />
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

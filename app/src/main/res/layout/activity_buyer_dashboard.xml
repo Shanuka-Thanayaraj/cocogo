@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fullscreen Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coconut_bg"
+        android:contentDescription="Background Image" />
+
+    <!-- Semi-transparent overlay for better contrast -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Container for 3 boxes -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:divider="@android:color/transparent"
+        android:showDividers="middle"
+        android:dividerPadding="16dp">
+
+        <!-- Box 1 -->
+        <FrameLayout
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/box1Image"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/your_image_4"
+                android:alpha="0.3" />
+
+            <Button
+                android:id="@+id/postAreaButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="View Post"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+         <!-- Box 2 -->
+        <FrameLayout
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/box2Image"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:alpha="0.6"
+                android:scaleType="fitXY"
+                android:src="@drawable/your_image_2" />
+
+            <Button
+                android:id="@+id/locationTrackButton"
+                android:layout_width="318dp"
+                android:layout_height="120dp"
+                android:background="@android:color/transparent"
+                android:text="Location Track"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Box 3 -->
+        <FrameLayout
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box_background"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/box3Image"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/your_image_3"
+                android:alpha="0.6" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

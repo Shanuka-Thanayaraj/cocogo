@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">cocogo</string>
+
+    <!-- Only actual user roles here -->
+    <string-array name="user_types">
+        <item>Seller</item>
+        <item>Buyer</item>
+    </string-array>
+
+    <!-- Separate string for the spinner hint -->
+    <string name="select_user_type">Select user type</string>
+</resources>
+

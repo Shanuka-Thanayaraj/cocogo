@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="user_type_array">
+        <item>Select user type</item>
+        <item>Seller</item>
+        <item>Buyer</item>
+    </string-array>
+
+
+        <string-array name="user_roles">
+            <item>Select User Type</item>
+            <item>Seller</item>
+            <item>Buyer</item>
+        </string-array>
+
+
+</resources>
